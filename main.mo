@@ -28,7 +28,7 @@ actor{
     MessageHistory.put(senderPhone,message);
   };
 
-  public func getPhone(): async ?Entry {
+  public func getPhone(name:Name): async ?Entry {
      return phoneBook.get(name);
   };
 
